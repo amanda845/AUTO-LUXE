@@ -14,6 +14,7 @@ export interface Vehicle {
   price_per_day: number
   available: boolean
   image_url: string | null
+  images?: string[]
   created_at: string
 }
 

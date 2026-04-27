@@ -28,6 +28,7 @@ create table if not exists public.vehicles (
   price_per_day numeric not null check (price_per_day > 0),
   available boolean default true,
   image_url text,
+  images text[],
   created_at timestamp with time zone default now()
 );
 
